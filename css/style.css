@@ -9033,6 +9033,9 @@ article {
 .process-section h2{
   color: #648186;
 }
+.card .project-date {
+  color: #648186;
+}
 
 .w3-quarter{
    float:left;
