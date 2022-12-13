@@ -80,42 +80,6 @@
        }
  });
 
- // testimonial Slides
- $(document).ready(function(){
-     $("#testimonial-slider").owlCarousel({
-         items:1,
-         itemsDesktop:[1000,1],
-         itemsDesktopSmall:[979,1],
-         itemsTablet:[768,1],
-         pagination:true,
-         navigation:false,
-         navigationText:["",""],
-         slideSpeed:1000,
-         singleItem:true,
-         autoplay:true,
-         autoplaySpeed: 1000,
-         autoplayTimeout: 7000,
-         loop: true
-     });
- });
-
- $(document).ready(function(){
-     $("#team-slider").owlCarousel({
-         items:1,
-         itemsDesktop:[1000,1],
-         itemsDesktopSmall:[979,1],
-         itemsTablet:[768,1],
-         pagination:true,
-         nav:true,
-         navigationText:["",""],
-         slideSpeed:1000,
-         singleItem:true,
-         autoplay:true,
-         autoplaySpeed: 1000,
-         autoplayTimeout: 14000,
-         loop: true
-     });
- });
   // Burger Menu
 	var burgerMenu = function() {
 
@@ -186,7 +150,7 @@
 					sd = $('.js-scroll-wrap');
 
 
-			if (x.matches){
+			if (y.matches){
 
 				if ( !navbar.hasClass('scrolled') ) {
 					navbar.addClass('scrolled');
@@ -234,7 +198,8 @@
 			}
 		});
 	};
-	var x = window.matchMedia("(max-width: 700px)")
+	var x = window.matchMedia("(min-width: 700px)");
+	var y = window.matchMedia("(max-width: 700px)");
 	scrollWindow(x); // Call listener function at run time
 	x.addListener(scrollWindow);
 
