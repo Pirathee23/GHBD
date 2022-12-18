@@ -185,10 +185,26 @@
 					navbar = $('.ftco_navbar'),
 					sd = $('.js-scroll-wrap');
 
-			if (st > 150) {
+
+			if (x.matches){
+
 				if ( !navbar.hasClass('scrolled') ) {
 					navbar.addClass('scrolled');
           $('.navbar-brand img').attr('src','images/Logo_text_slogan.png');
+				}
+				if (st < 150) {
+					if ( navbar.hasClass('scrolled') ) {
+						navbar.removeClass('scrolled sleep');
+			  $('.navbar-brand img').attr('src','images/Logo_text_slogan.png');
+					}
+				}
+			
+		} else{
+
+			if (st > 150 && x.matches) {
+				if ( !navbar.hasClass('scrolled') ) {
+					navbar.addClass('scrolled');
+		$('.navbar-brand img').attr('src','images/Logo_text_slogan.png');
 				}
 			}
 			if (st < 150) {
@@ -197,6 +213,7 @@
           $('.navbar-brand img').attr('src','images/Logo-no-bg.png');
 				}
 			}
+		}
 			if ( st > 350 ) {
 				if ( !navbar.hasClass('awake') ) {
 					navbar.addClass('awake');
@@ -217,7 +234,9 @@
 			}
 		});
 	};
-	scrollWindow();
+	var x = window.matchMedia("(max-width: 700px)")
+	scrollWindow(x); // Call listener function at run time
+	x.addListener(scrollWindow);
 
 
 
