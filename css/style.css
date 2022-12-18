@@ -2507,6 +2507,19 @@ fieldset:disabled a.btn {
   	 outline: 2px dotted #55d7dc;
   }
 
+  .fa-file-download {
+    color: #648186;
+  }
+    
+  .fa-file-download:hover {
+    color: #D13519
+  }
+  .fa-file-download:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+ }
+ .fa-file-download:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+ }
 
 .btn-link {
   font-weight: 400;
@@ -9381,10 +9394,11 @@ article {
 }
 .ftco-hireme h2 {
   padding-bottom: 0 !important;
-  margin-bottom: 0px;
+  margin-bottom: 100px;
   color: #fff;
   font-size: 10vw;
   font-weight: 900;
+  line-height : 10vw
 }
 .ftco-hireme p {
   margin-top: -10px;
@@ -9392,32 +9406,56 @@ article {
   color: #ebf2f5;
   font-size: 3vw;
 }
+
 .ftco-hireme h2 span {
   color: #D13519;
 }
 
 @media only screen and (min-width: 576px) {
+  .ftco-hireme .row {
+    top: 60%;}
   .ftco-hireme h2 {
+    line-height: 9vw;
     font-size: 60px;}
   .ftco-hireme p {
     font-size: 18px;}
 }
 @media only screen and (min-width: 768px) {
+  .ftco-hireme .row {
+    top: 60%; }
   .ftco-hireme h2 {
+    line-height: 9vw;
     font-size: 70px;}
   .ftco-hireme p {
     font-size: 22px;}
 }
 @media only screen and (min-width: 992px) {
+  .ftco-hireme .row {
+    top: 60%;}
   .ftco-hireme h2 {
+    line-height: 9vw;
     font-size: 85px;}
   .ftco-hireme p {
     font-size: 30px;}
 }
-
+@media only screen and (min-width: 1440px) {
+  .ftco-hireme .row {
+    top: 60%;}
+  .ftco-hireme h2 {
+    line-height: 7vw;
+    font-size: 85px;}
+  .ftco-hireme p {
+    font-size: 30px;}
+}
 @media (min-width: 992px) {
   .margin-top {
     padding-top: 10em !important; } }
+
+
+
+    .articlePage {
+      background: #f7f7f7;
+    }
 
 .project {
   width: 100%;
