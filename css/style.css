@@ -9511,7 +9511,7 @@ form .form-row .textarea{
 }
 .ftco-hireme h2 {
   padding-bottom: 0 !important;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   color: #fff;
   font-size: 10vw;
   font-weight: 900;
@@ -9519,6 +9519,7 @@ form .form-row .textarea{
 }
 .ftco-hireme p {
   margin-top: -10px;
+  margin-bottom: 70px;
   padding-top: 0px;
   color: #ebf2f5;
   font-size: 3vw;
@@ -9550,6 +9551,7 @@ form .form-row .textarea{
   .ftco-hireme .row {
     top: 60%;}
   .ftco-hireme h2 {
+    margin-bottom: 0px;
     line-height: 9vw;
     font-size: 85px;}
   .ftco-hireme p {
@@ -9559,6 +9561,7 @@ form .form-row .textarea{
   .ftco-hireme .row {
     top: 60%;}
   .ftco-hireme h2 {
+    margin-bottom: 0px;
     line-height: 7vw;
     font-size: 85px;}
   .ftco-hireme p {
