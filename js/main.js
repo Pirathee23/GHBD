@@ -268,6 +268,7 @@
 	};
 	contentWayPoint();
 
+
 	// magnific popup
 	$('.image-popup').magnificPopup({
     type: 'image',
