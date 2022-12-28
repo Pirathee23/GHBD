@@ -69,7 +69,6 @@
         <div class="row justify-content-center">
           <div class="col-md-12 ftco-animate text-center">
             <h2> BUILDING DESIGN & <span>PERMIT APPLICATION</span></h2>
-            <p></p>
             <a href="#resume-section" class="btnn draw-border"><span>Read More</span></a>
             <!--<button onclick="window.location.href='#resume-section';" class="btnn draw-border">Read More</button>-->
           </div>
@@ -110,7 +109,7 @@
             <p class="w3-large">Secondary Suite</p>
             <p class="text"> Basement Unit Conversions.</p>
             <p class="text">Multi Unit Conversions.</p>
-            <p class="text">Garden Suite/ Tiny Homes.</p>
+            <p class="text">Garden Suite & Tiny Homes.</p>
           </div>
           <div class="w3-quarter">
             <i class="fas fa-city w3-margin-bottom w3-jumbo"></i>
@@ -251,7 +250,7 @@
                                   <p class="card-text">Brampton, Ontario</p>
                                   <p class="card-text project-date">Winter 2021 - In progress</p>
                                   <hr>
-                                  <p class="card-text">Designed and obtained building permit for a legal basement unit conversion. Provided liaison with the city and sourcing contractors.</p>
+                                  <p class="card-text">Designed and obtained building permit for a legal basement unit conversion. Provided liaison with the city and sourced contractors.</p>
                                 </div>
                               </div>
                             </div>
@@ -553,14 +552,15 @@
             <p>Have a question, need a building permit or design?</p>
           </div>
         </div>
+        <!-- 
         <div class="row d-flex contact-info mb-5">
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
           	<div class="align-self-stretch box p-4 text-center">
           		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
+          			<span class="icon-facebook"></span>
           		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>Toronto, Ontario</p>
+          		<h3 class="mb-4">Facebook</h3>
+	            <p><a href="https://www.facebook.com/ghpminc">GHBDesigners</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -591,7 +591,71 @@
 	          </div>
           </div>
         </div>
+
+
+
+        
+        <form class="form-floating g-3 row needs-validation" novalidate>
+          <div class="col-md-12">
+            <label for="validationCustom01" class="form-label">Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name" aria-label="Name" id="validationCustom01" required>
+            <div class="invalid-feedback">
+              Please provide a name.
+            </div>
+          </div>
+          <div class="col-md-12">
+            <label for="validationCustom03" class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Enter your email address" aria-label="Email" id="validationCustom03" required>
+            <div class="invalid-feedback">
+              Please provide a valid email.
+            </div>
+          </div>
+          <div class="col-md-12">
+            <label for="validationCustom05" class="form-label">Message</label>
+            <textarea class="form-control" placeholder="Enter your message" aria-label="Enter your message" id="validationCustom05" rows="4"></textarea>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </div>
+        </form>    
+        --> 
       </div>
+
+
+
+      <div class="contact-form">
+        <div class="container">
+          <form action="https://formspree.io/f/mwkjejye" method="POST">
+            <div class="form-row">
+                <div class="input-data">
+                  <input type="text" id="name" name="name" required>
+                  <div class="underline"></div>
+                  <label for="name">First Name</label>
+                  <div class="invalid-feedback">
+                    Please provide a name.
+                  </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                  <input type="text" id="email" name="email" required>
+                  <div class="underline"></div>
+                  <label for="email">Email Address</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data textarea">
+                  <textarea type="text" id="message" name="message" rows="4" required></textarea>
+                  <div class="underline"></div>
+                  <label for="message">Write your message</label>
+                </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Send Your Message</button>
+            </div>
+          </form>
+        </div>
+     </div>
     </section>
 
 
